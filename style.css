@@ -1,0 +1,175 @@
+/*CSS reset*/
+html{scroll-behavior: smooth;
+}
+*{ 
+    margin: 0%;
+    padding: 0%;
+}
+/*Navigatin bar */
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+/* navigation bar :logo and image*/
+#logo{
+    margin: 10px 10px;
+
+}
+#logo img{
+    height: 70px;
+    margin: 3px 5px;
+
+
+}
+/* navigation bar: list styling*/
+
+#navbar{
+    width: 100%;
+    position: relative ;
+}
+#navbar ul{
+    display: flex; 
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(47, 165, 23);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /*content upar aagya nav bar ka*/
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    
+    list-style: none; /*dots won't come*/
+    font-size: 1.0rem;
+
+}
+
+#navbar ul li a{
+    color: antiquewhite;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: blanchedalmond;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 200px; /* Adjusted padding for better spacing */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white; /* Text color */
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img2.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.1; /* Adjusted opacity for a subtle background image */
+}
+
+#h-primary {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+p {
+    max-width: 600px; /* Limit the width of the text for better readability */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.btn {
+    background-color: #4CAF50; /* Green button color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+#blog {
+    background-color: #f4f4f4; /* Light gray background for the blog section */
+    padding: 40px;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    line-height: 1.6;
+}
+#gallery {
+    background-color: #f8f8f8; /* Light gray background for the gallery section */
+    padding: 40px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-container a {
+    text-decoration: none;
+}
+
+.image-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+.post-title{
+    color: red;
+}
